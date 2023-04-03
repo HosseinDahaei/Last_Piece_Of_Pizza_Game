@@ -13,8 +13,7 @@ The purpose of the program is to play with you and be able to win 100%. In the w
 
 Considering that the movements of the players are completely equal, we say that the game is fair and that whether a player wins or loses depends only on the current state of the game. Now we think about solvable and small situations.
 
-We know that if there are no pizza pieces left, the person whose turn it is is a loser. So for the status 0, the loss is certain. The goal of each player is that the opposite player is the loser, so if the number of pizza pieces is smaller than or equal to M, the player eats all the pieces until the opposite player reaches zero and becomes a loser. So a winning situation is a situation from which you can reach a losing situation. According to this rule, we make an Array and fill it from the beginning, according to which we can decide whether to start the game or not, and also with Moving from the win state to the loss state, we defeat the opponent player 100%.
-
+We know that if there is no pizza pieces left, the person whose turn it is is a loser. So for the status 0, the loss is certain. The goal of each player is that the opposite player is the loser, so if the number of pizza pieces is smaller than or equal to M, the player eats all the pieces until the opposite player reaches zero and becomes a loser. If with just one move we can reach the losing situation, it will be the winning situation. According to this rule, we make an Array and fill it from the beginning, according to which we can decide whether to start the game or not, and also with Moving from the win state to the loss state, we defeat the opponent player 100%.
 
 
 # Prerequisites:
